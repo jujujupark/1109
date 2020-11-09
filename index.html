@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>온콘키트_2만원의행복_박주</title>
+</head>
+<style type="text/css">
+			html{scroll-behavior: smooth;}
+/*폰트*/@font-face {
+    		font-family: 'GmarketSansLight';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight: normal;font-style: normal;}
+		@font-face {
+    		font-family: 'GmarketSansBold';
+    		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    		font-weight: normal;
+   	 		font-style: normal;}
+   	 	@font-face {
+    		font-family: 'GmarketSansMedium';
+    		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;}   	
+
+body,h1,h2,h3,p,img,div,  ol,ul,li,nav,hr{margin:0; padding: 0;}
+
+	header a{font-family:GmarketSansmedium; display: block; 
+			color:#ff00ff;
+			display: inline-block;
+			 background:black; 
+			 width: 200px; height: 80px; 
+			 margin-right:15px; text-align: center; 
+			 line-height: 80px;
+			 text-decoration: none;
+			 border-radius: 0px;
+			 border: 1.5px solid:#ff00ff; }
+ header a:hover{
+			 	background:#ff00ff;
+			 	color:black;
+			 	transition: all 0.5s;
+			 }
+
+	nav{width: 200px; height: 250px; position: fixed; z-index: 2; padding-top: 15px;}
+	nav ul{list-style-type: none; padding:0;  padding-left: 67px; font-size: 1.3em;  }
+	nav li{ margin-top: 30px;  font-size: 1em;}
+	a{text-decoration: none; display: block;
+	  }
+	.homebuttondiv{width: 130px; padding: 20px;}
+	.homebutton{width: 130px;}
+	.navname{font-family:GmarketSansbold; font-size: 0.7em; color:#ff00ff;}
+
+	.shop{width: 130px; padding: 20px; float:right;}
+   
+   header{  height:820px; }
+
+
+    .introimg{  height:624px;  }
+	.bg-header{background : url('h_bg.png'); background-size:100% auto; background-attachment: fixed}
+	.bg-header2{background : url('h_1.png'); background-size:100% auto;}
+	
+
+	section h1{padding-top:120px; padding-bottom: 40px; font-size: 4em; line-height: 1.4;}
+    section,p{ font-family:GmarketSansmedium; color: #ff00ff;}
+	body{margin:auto; background: black;}
+
+	h2{text-align: center; padding: 20px 0px;}
+	
+	
+	.section-margin{margin-top: 180px;}
+
+	.titleback{background: blue;}
+	.row{width:1200px; display:flex; padding:30px 0px; margin: auto;}
+	.header-row{width:1500px; 
+				display:flex; 
+				padding:200px 0px; 
+				margin: auto;}
+	.rowwidthnone{ width:1500px; display:flex; padding:30px 0px; margin: auto;}
+	.size{height:220px;}
+	.widerow{height: 500px;}
+
+	.col-3{font-family:GmarketSansbold; width:33.3%; background: black; margin: 0px 10px; color: #ff00ff;}
+	.text-col-3{width:230px;}
+	.name-col-3{ font-family:GmarketSanslight; width:33.3%; margin: 0px 20px; overflow: hidden; color: #ff00ff; font-size: 0.6em;}
+
+
+	.hidden{overflow: hidden;}
+	img{width: 100%; display: block;}
+	img .detailmargin{margin: 20px 0px;}
+	.smallgif0{ display: block; width:40%; margin:0px auto;}
+	.smallgif3{ display: block; width:33%; margin:0px auto;}
+	.smallgif{ display: block; width:20%; margin:0px auto;}
+	.smallgif2{  width:10%; margin:0px auto;}
+
+
+	.outline{border: solid #ff00ff 2px;}
+	.bigtext{padding:0px 20px; font-size: 2em;font-family:GmarketSansbold;}
+	.contenttext{padding:0px 20px;font-family:GmarketSansmedium;  }
+	
+	.col-1{width:100%; font-family:GmarketSansbold; margin: auto}
+	.col-6{width:16.6%; font-family:GmarketSansbold;  margin: auto}
+	.col-2{font-family:GmarketSansbold; width:50%;  margin: 0px 20px;  color: #ff00ff;}
+	.col-4{font-family:GmarketSansbold; width:25%; margin: 0px 20px; overflow: hidden; color: #ff00ff;}
+	.col-70p{font-family:GmarketSansbold; width:70%; margin: 0px 20px; overflow: hidden; color: #ff00ff;}
+
+	.header-col-4{font-family:GmarketSansbold; color:#ff00ff; margin-left: 450px; overflow: hidden; font-size: 1.5em;}
+	header p{ font-size: 1em; margin: 40px 0px;}
+	
+	p{font-size: 1.5em; line-height: 1.6em;}
+	.detailtitle{ font-family:GmarketSansbold; margin: 0px 20px; overflow: hidden; color: #ff00ff; font-size: 4.2em; line-height: 1.5;}
+	.smalltext{padding-top: 30px; font-size: 1em;}
+	.textcenter{text-align: center;}
+ 	
+	.text-stroke {
+    color: black;
+    text-shadow:
+    -1px -1px 0 #ff00ff,
+    1px -1px 0 #ff00ff,
+    -1px 1px 0 #ff00ff,
+    1px 1px 0 #ff00ff;  }
+
+
+    /*푸터*/
+	ul,li{list-style-type: none;}
+
+    footer{position: relative;
+		margin-top: 80px;
+
+  		box-sizing: border-box;
+ 		}
+	footer li {float: left; width:550px; margin-right: 91px;
+				 text-align: left; font-size:0.7em ; }
+    footer section{margin-bottom:50px;}
+	footer div{width:100%; }
+	footer p{padding-top: 45px;   text-align: center; font-size: 0.7em;}
+
+
+.footer-text{ font-size: 1.5em; line-height: 1.2em; font-color: black;}
+.footer-bigtext{font-family:GmarketSansbold; width:500px; margin-right: 30px; font-size: 2em;}
+
+    footer img {width: 100%;
+                          height: 480px;}
+.bg-black{background: black;}
+.bg-blue{background:blue;}
+.bg-pink{width:100%; height:30p; background:#ff00ff;}
+
+.blue{font-color: blue;}
+.yellow{font-color: #f9f569;}
+.black{font-color:black;}
+.pink{font-color:#ff00ff;}
+
+.footerlast{height:100px; margin-bottom: 0px;}
+.j_margin{font-size: 10em; padding-left: 140px;}
+.j_top{margin-top:70px;}
+.info_top{padding-top: 20px}
+
+.song{padding-top: 20px; font-color: blue; font-style: italic;}
+hr{display:block; border:0;  height:2px; border-top: 1px solid #ff00ff;
+margin: 4em 0;}
+
+
+.inline{display: inline;}
+
+.left{text-align: left;}
+</style>
+
+	<nav>
+		<div class="homebuttondiv">
+		<a href="index.html"> <img class="homebutton" src="logo.png"> </a>
+		</div>
+			<ul>
+			<li>
+				<a href="#a1"><span class="navname">제작<br>스토</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a2"><span class="navname">키트구성</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a3">
+					
+					<span class="navname">필수템즈</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a4">
+					
+					<span class="navname">건강템즈</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a5"><span class="navname">웅장템즈</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a6">
+					
+					<span class="navname">갤러리</span>
+				</a>
+			</li>
+			<li>
+				<a href="#a7">
+					
+					<span class="navname">어떻게<br>활용할까</span>
+				</a>
+			</li>
+			<li>
+			<li>
+				<a href="#a8"><span class="navname">살짝 설레는<br>이벤트</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+
+<header class="bg-header">
+	<div class= "header-row">
+		<div class="header-col-4 "></div>
+		
+		<div class="header-col-4 ">
+
+	<h1>모두가 안방 1열,<br> 온라인 콘서트 즐기기</h1> 
+	<p>열정적인 콘서트 관람자를 위한<br> 포스트 코로나시대의 플랫폼에 맞춘<br> 온라인 콘서트 키트 </p>
+	<a class="outline" >장바구니</a>
+	<a class="outline">구매하기</a>
+	</div>
+</div>
+	
+	
+
+</header>
+
+<body>
+
+
+<section  class="titleback"  >
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>LISTEN, THIS IS MY 제작 STORY</h2>		
+		</div></div>
+	</section>
+
+<section class="bg-header2 outline textcenter introimg" id="a1">
+	<div class= "rowwidthnone">	
+
+	<div class="col-1 ">
+	<h1>코로나, 차에 타봐</h1> 
+	<p>연기, 또 연기, 결국 취소.<br>
+현생 서터레스는 덕질로 풀어야 하는 우리네<br> 오딱구들은
+아주 힘든 시기를 보내고 있다.<br>
+체조경기장, 각종 돔, 라이브홀을 휩쓸던<br> 우리를 집안에 가둬버린 COVID19. <br>수많은 컴백이 연기되고 콘서트는 연기처럼 사라졌다.<br> 팬들에겐 정말 눈물나는 시간이 아닐 수 없었다.
+	</div>
+	
+	</div>	
+</section>
+
+
+<section class="section-margin">
+
+	<div class= "row">
+	
+		<div class="col-1 song textcenter" ><p>"코로나 XX놈아 내 전화 빨리 받아라<br>어떻게든 너를 때려야겠어<br>감히 나조차도 바라볼 수 없는...<br>소중한 더쿠를 니가 건드렸어 <br>너를 손봐주겠어 you you you..."<br><br> 비 - 차에 타봐</p></div>
+	</div>
+</section>
+
+
+<section class="section-margin">
+	<h1 class=" col-1 textcenter ">이러고 있을 순 없다!
+		</h1>
+	<p class="textcenter"></p> 
+	<div class= "row">
+		
+		
+		<div class="col-2 " ><img class="outline" src="intro2.png"></div>
+		<div class="col-2" ><p>그러나 케이팝 시장은 멈출 수 없다. 그동안 컴백 쇼케 용도로 사용하던 무료 온라인 스트리밍을 이용하여<br> 너도나도 온라인 콘서트가 개최되고 있다.<br><br>문제는 이름만 같은 콘서트일 뿐 모두가 새로 겪는 상황이어서 어떻게 이 온라인콘을 오프라인처럼 신나게<br> 즐길 수 있을지 우왕좌왕 하고 있다는 것이다. 물론 <br>무엇도 같은 현장에서의 생생한 감동을 이길 수 없단 것을 안다. 하지만 온라인만의 장점은 분명히 있다구?<br> 그러니까 최대한 이시국 콘서트를 즐겨보자!</p></div>
+	</div>
+</section>
+
+<section class="section-margin">
+
+</section>
+
+<section  class="titleback section-margin">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>온라인, 이득인 부분?</h2>		
+		</div></div>
+</section>
+
+<section class="widerow section-margin">
+	<div class="row">
+		<div class="col-6"> </div>
+		<div class="col-1 outline" ><img src="j_1.png"> </div>
+		<div class="col-6"> </div>
+</div>
+</section>
+<section>
+	<div class="row j_top">
+		<div class="j_margin text-col-2 detailtitle text-stroke" >원.</div>
+		<div class="col-2 bigtext" ><h2 class="left">아 편하다!<br> 복잡한 에티켓 X 준비물 X<br> 개인멘트 마음껏,<br>누워서 봐도 된다니,<br>꿈의 눕콘 실현!
+</h2>
+		</div>
+</section>
+
+<section class="widerow section-margin">
+	<div class="row">
+		<div class="col-6"> </div>
+		<div class="col-1 outline" ><img src="intro3.png"> </div>
+		<div class="col-6"> </div>
+	</div>
+</section>
+
+<section>
+	<div class="row j_top">
+		<div class="j_top j_margin text-col-2 detailtitle text-stroke">투.</div>
+		
+		<div class="j_top col-2 bigtext" ><h2 class="left">시야의 평등!<br> 지옥같은 티켓팅 필요 X <br>4층 하느님 석에서<br> 면봉만한 최애를 보며<br>눈물을 흘리지 않아도 됨.
+</h2>
+	
+	</div>
+</section>
+
+
+	<section class="titleback section-margin" id="a2">
+		<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>키트구성템 VIEW</h2>
+			
+			</div></div>
+	</section  >
+<section class="section-margin"><div class="row"> <div class="col-1 bigtext">
+	<h2 class="detailtitle song">그래서 탄생되었다!</h2>
+	<h2 class=" song">오프라인의 노스탤지어와 <br>온라인콘만의 장점을 모아서<br> 만들어진 혜자 구성키트!<br>온콘키트 구성품을 소개한다 </h2>
+</div></div></section>
+
+
+<section class="widerow j_top">
+	<div class="row">
+		<div class="col-1 outline" ><img src="mockup2.png"> </div></div>
+</section>
+
+<section >
+	<div class="row j_top">
+	<div class="  col-1 textcenter">
+		<img class="smallgif2 j_top" src="h_3.png">
+		<h2 class=" "> <br>50x50x20cm / 박스 내 총 6개 아이템 구성
+	</h2>
+</div></div></section>
+
+	<section class="section-margin">
+	<div class="row size ">
+		<div class="text-col-3 col-3 text-stroke bigtext ">1<br><br>필수인 부분 <br>반박불가</div>
+		<div class="col-3 outline hidden" ><img src="o_ticket.jpg"></div>
+		<div class="col-3 outline hidden" ><img src="o_bong.png"></div></div>
+	</section>
+
+	<section>
+	<div class="row size">
+		<div class="text-col-3 col-3 text-stroke bigtext">2<br><br>몸챙겨 <br>내일 출근이다.</div>
+		<div class="col-3 outline hidden" ><img src="o_stand.jpg"></div>
+		<div class="col-3 outline hidden" ><img src="o_can.jpg"></div></div>
+	</section>
+
+	<section>
+	<div class="row size">
+		<div class="text-col-3 col-3 text-stroke bigtext">3<br><br>가슴이 <br>웅장해진다.</div>
+		<div class="col-3 outline hidden" ><img src="o_cusion.jpg"></div>
+		<div class="col-3 outline hidden" ><img src="o_ticket.jpg"></div></div>
+	</section>
+
+	<section  class="titleback section-margin" id="a3">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>반박안받음_콘서트_찐_필수템_인정</h2>		
+		</div></div>
+	</section>
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">반박불가 <br>필수템 원.<br>콘서트티켓 </div>
+		<div class="col-3" ></div>
+		<div class="col-3 " ><img class="outline " src="t_6.jpg">
+		<p class="smalltext textcenter">10x19cm / 무광 프리미엄 소프트</p></div></div>
+		<hr>
+	</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">온라인콘을 보면... <br>어딘가 허전하다 ?</h1>
+		<div class="smallgif  textcenter"><img class="section-margin" src="pika1.gif">
+			<p class="song blue">(Aㅏ 허하다...)</p></div>
+		<p class="textcenter j_top">
+			
+그건 실물이 남지 않아서 일겁니다...<br>티켓이란 단순 입장권 이상으로 내가 <br>이 콘서트를 갔다왔다! 하는
+발도장 쾅 인증이라구.<br> 덕메들의 티켓앨범은 2019에서 멈추었잖아...<br><br></p></div></div></section>
+
+	<section class="j_top">
+
+		<div class="outline" ><img src="t_1.jpg"> </div>
+</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">
+그.래.서 준비함</h1>
+<img class="smallgif j_top" src="babam.jpeg">
+<h1 class="textcenter">온콘키트가 부족함을 채워주겠음.<br> 멋진 온라인콘서트 전용 <br>티켓으로 발도장을 남겨!</p>
+</div></div>
+</section>
+
+<section>
+	<div class="row">
+	<div class="col-1" ><img src="t_5.jpg"> </div></div></section>
+	<section>
+	<div class="row">
+	<div class="col-1" ><img src="t_2.jpg"> </div></div></section>
+	<section>
+	<div class="col-1" ><img src="t_4.jpg"> </div></div></section>
+
+
+<section  class="titleback section-margin">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>반박안받음_콘서트_찐_필수템_인정</h2>		
+		</div></div>
+	</section>
+
+
+<section class="section-margin">
+	<div class="row ">
+		<div class="col-4 detailtitle text-stroke">반박불가 <br>필수템 투.<br>응원봉 </div>
+		<div class="col-3" ></div>
+		<div class="col-3 " ><img class=" outline" src="l_0.jpg">
+		<p class="smalltext textcenter">12x7x26cm / 플라스틱,고무</p></div></div>
+		<hr>
+	</section>
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">말이 필요없다! <br>진정한 반박불가 아이템<br><br>응원봉 등판!</h1>
+	</div></div></section>
+
+<section>
+	<div class="outline" ><img src="l_6.jpg"> </div></section>
+
+<section>
+	<div class="row">
+	<div class="col-1" ><img src="l_4.jpg"> </div></div></section>
+	<section>
+	<div class="row">
+	<div class="col-70p" ><img src="l_2.jpg"> </div>
+	<div class="col-5" ></div>
+</div></section>
+<section><div class="row">
+	<div class="col-4" ></div>
+	<div class="col-70p" ><img src="l_3.jpg"> </div>
+</div></section>
+	<section>
+	<div class="col-1" ><img src="l_8.jpg"> </div></div></section>
+
+<section  class="titleback section-margin" id="a4">
+	<div class="row">
+		<div class="col-1 bigtext textcenter" >
+		 <h3> 마치_DEATH처럼_다가와_아침_7시_등교라는_그림자</h3>		
+		</div></div>
+	</section>
+
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">으라차차 <br>건강템 원.<br>폰 스탠드 </div>
+		<div class="col-3" > </div>
+		<div class="col-3 " ><img class="outline" src="o_stand.jpg">
+		<p class="smalltext textcenter">17x10x5cm / 반투명 아크릴</p></div></div>
+		<hr>
+	</section>
+
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">하트 누르다 <br>손목 나갈라!</h1>
+	</div></div></section>
+		<section class="j_top">
+			<div class="row">
+		<div class="col-2">
+			<div class="smallgif0 textcenter">
+			<img  src="sesu.gif"></div>
+			<p class="song textcenter smalltext">팬들의 하트로 세수하기ST</p></div>
+		<div class="col-2">
+			<div class="smallgif3 textcenter">
+			<img  src="hair.gif"></div>
+			<p class="song textcenter smalltext">팬들의 하트로 머리감기ST</p></div>
+		</div></section>
+			<section><div class="col-1 textcenter ">
+			<p class="song j_top yellow">이렇게 하트를 3시간동안 누르면<br> 손목과 손가락이 욕합니다.<br><br></p>
+			<img class="smallgif j_top" src="hand.gif"><p class="song j_top yellow">손목 : (그냥 죽여..)</p></div></section>
+	
+
+	<section class="section-margin">
+
+		<div class="outline" ><img src="s_1.jpg"> </div>
+</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 j_top">
+
+		<h1 class="textcenter ">
+ 그래서 폰스탠드를<br> 준비했습니다!</h1>
+
+<h1 class="textcenter">재미도 챙기고 체력도 챙겨야<br>❤멋쟁이❤ 오딱구겠죠?</p>
+</div></div>
+</section>
+
+
+<section>
+	<div class="row">
+		<div class="col-6" > </div>
+	<div class="col-2 textcenter" ><img src="s_2.jpg"> </div>
+<div class="col-6" > </div></div></section>
+	<section>
+	<div class="row">
+	<div class="col-2" ><img src="s_3.jpg"> </div>
+	<div class="col-2" ><img src="s_3.jpg"> </div>
+</div></section>
+	
+	<section>
+	<div class="col-1" ><img src="s_5.jpg"> </div></div></section>
+
+<section  class="titleback section-margin">
+	<div class="row">
+		<div class="col-1 bigtext textcenter" >
+		 <h3>마치_DEATH처럼_다가와_내일_7시_등교라는_그림자</h3>		
+		</div></div>
+	</section>
+
+
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">으라차차<br>건강템 투.<br>음료수 </div>
+		<div class="col-3" ></div>
+		<div class="col-3 " ><img class="outline" src="o_can.jpg">
+		<p class="smalltext textcenter">335ml / 캔 </p></div></div>
+		<hr>
+	</section>
+
+
+<section>
+	<div class="row">
+	<div class=" col-1 textcenter">
+		<h1 class=" "> <br>콘서트 보면서 소리지르다<br>목소리 가출한 사람 손!</h1>
+
+		<p class="j_top">
+		 (1빠)        ^^/<br>
+		ㅅ_ㅅ/   (저요)<br>
+		 (저도 입니다)               ㅇ.ㅇ/<br>
+		^_^/    (저도요)<br>
+		 (아 나도여)           -_-;/<br>
+		(me too)                               ㅎ_ㅎ/ <br>
+		ㅇ0ㅇ/                     (我也是!)</p></div></div></section>
+		
+	<section class="j_top">
+		<div class="outline" ><img src="c_6.jpg"> </div>
+</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+		<h1 class="textcenter ">
+그.래.서 준비함2</h1>
+<img class="smallgif" src="drink.gif">
+<h1 class="textcenter">멋쟁이 최애가 프린팅된<br>온콘키트표 DRINK로<br> 촉촉하게 맑게 자신있게 고함쳐!</p>
+</div></div>
+</section>
+
+<section class="section-margin">
+	<div class="row">
+	<div class="col-3" ></div>
+	<div class="col-4" ><img src="c_2.jpg"> </div>
+	<div class="col-70p" ><img src="c_4.jpg"> </div>
+</div></section>
+<section>
+	<div class="row">	
+	<div class="col-70p" ><img src="c_5.jpg"> </div>
+	<div class="col-4" > </div></div></section>
+
+></div></section>
+		
+	<section>
+	<div class="col-1 j_top" ><img src="c_1.jpg"></div></section>
+
+
+<section  class="titleback section-margin" id="a5">
+	<div class="row">
+		<div class="col-1 bigtext textcenter" >
+		 <h2>가슴 울리는 장면들이 뇌리에 스치면서 웅장해진다</h2>		
+		</div></div>
+	</section>
+
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">웅장템 원.<br>웅장쿠션 </div>
+		<div class="col-3" ></div>
+		<div class="col-3 " ><img class="outline" src="o_cusion.jpg">
+		<p class="smalltext textcenter">47x37x17cm / 소프트 스판덱스</p></div></div>
+		<hr>
+	</section>
+
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">"너무 신나서 벽치다가<br>우리집 원룸됐어!"</h1>
+		<div class="smallgif j_top textcenter"><img  src="punch.jpeg"></div>
+		</div></div></section>
+
+	<section class="j_top">
+
+		<div class="outline" ><img src="cu_5.jpg"> </div>
+</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">
+더쿠들은 다 알거야 <br>너무 귀여운 걸 보면<br> 자라나는 내안의 폭력성... <br>그래서 준.비.함!</h1>
+<img class="smallgif0 j_top" src="sqeeze.gif">
+<h1 class="textcenter">함부로 아무 데나 퍽퍽 때리지 말구<br> 스트레스 인형 웅장쿠션을 써봐!</p>
+</div></div>
+</section>
+
+
+<section>
+	<div class="row">
+	<div class="col-2 textcenter" ><img src="cu_2.jpg"> </div>
+<div class="col-5" > </div></div></section>
+	
+	<section>
+	<div class="rowwidthnone">
+	<div class="col-6" > </div>
+	<div class="col-3" ><img src="cu_4.jpg"> </div>
+	<div class="col-3" ><img src="cu_6.jpg"> </div>
+</div></section>
+	
+	<section>
+	<div class="j_top col-1" ><img src="o_cusion.jpg"> </div></div></section>
+
+<section  class="titleback section-margin">
+	<div class="row">
+		<div class="col-1 bigtext textcenter" >
+		 <h2>가슴 울리는 장면들이 뇌리에 스치면서 웅장해진다</h2>		
+		</div></div>
+	</section>
+
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">웅장템 투.<br>포켓티슈 </div>
+		<div class="col-3" ></div>
+		<div class="col-3 " ><img class="outline" src="t1.jpg">
+		<p class="smalltext textcenter">12x21cm / 천연펄프</p></div></div>
+		<hr>
+	</section>
+
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">엄마! 눈물은 기쁠 때도<br> 흐르는 건가 봐요..</h1>
+		<div class="smallgif j_top textcenter"><img  src="cry1.jpg"></div>
+		</div></div></section>
+
+	<section class="j_top">
+
+		<div class="outline" ><img src="t4.jpg"> </div>
+</section>
+
+<section>
+	<div class="row">
+	<div class=" col-1 ">
+
+		<h1 class="textcenter ">
+감동의 마지막 멘트타임...<br> 눈물이 나지 않을 수 없다구?</h1>
+<img class=" j_top smallgif0" src="cry2.png">
+<h1 class="textcenter">어이어이..포켓 휴지로 <br>눈물 닦을 준비 해,,,</p>
+</div></div>
+</section>
+
+
+<section>
+	<div class="row">
+	<div class="col-2 textcenter" ><img src="t2.jpg"> </div>
+<div class="col-5" > </div></div></section>
+	
+	<section>
+	<div class="rowwidthnone">
+	
+	<div class="col-3" > </div>
+	<div class="col-2" ><img src="t5.jpg"> </div>
+</div></section>
+	
+	<section><div class="rowwidthnone">
+	<div class="j_top col-1" ><img src="t3.jpg"> </div></div></div></section>
+
+<section  class="titleback section-margin" id="a6">
+	<div class="row">
+		<div class="col-1 bigtext textcenter" >
+		 <h1>본새난다 번쩍번쩍<br> 온라인콘 키트자랑<br> 한바탕 갤러리</h1>		
+		</div></div>
+		<div class="col-1 " >
+	</section>
+
+<section>
+	<div class="row">
+		<div class=" col-3 "></div>
+	<div class=" col-2 ">
+	<div class="smallgif j_top textcenter"><img  src="h_3.png"></div>
+	<div class="smallgif j_top textcenter"><img  src="h_3.png"></div>
+	<div class="smallgif j_top textcenter"><img  src="h_3.png"></div></div>
+		<div class=" col-3 "></div>
+		</section>
+
+	<section >
+	<div class="j_top col-1" ><img src="g3.jpg"> </div></div></section>
+
+<section>
+	<div class="rowwidthnone j_top">
+	<div class="col-70p textcenter" ><img src="g2.jpg"> </div>
+<div class="col-4" > </div></div></section>
+	
+	<section>
+	<div class="rowwidthnone">
+	<div class="col-6" > </div>
+	<div class="col-4" ></div>
+	<div class="col-70p" ><img src="g7.jpg"> </div>
+</div></section>
+	
+	<section>
+	<div class="rowwidthnone">
+	<div class="col-6" > </div>
+	<div class="col-2" ><img  src="g8.jpg"> </div>
+	<div class="col-2" ><img src="g6.jpg"> </div>
+</div></section>
+
+<section>
+	<div class="rowwidthnone">
+	
+	<div class="col-1" ><img  src="g9.jpg"> </div>
+	<div class="col-6" > </div>
+
+</div></section>
+
+<section>
+
+	<div class="j_top col-1" ><img src="g4.jpg"> </div></div></section>
+
+
+	<section  class="titleback section-margin" id="a7">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>어떻게 쓰면 좋을까 알려주실?</h2>		
+		</div></div>
+		<div class="col-1 " >
+	</section>
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3  " ><img class="outline" src="profile.jpg">
+		<p class="smalltext textcenter ">  내가 알려주지!@>----------</p></div>
+		<div class="col-2"><p>
+이름 : 김덕메<br>
+나이 : 17<br>
+선호 아티스트 : 아이유 박효신 그리고 VIXX<br> 경력: 아이돌 덕질 2년차<br>
+코로나 전 단콘,팬미,공방 등 오프 참여 <br>성격: 꽤 쿨함<br>좌우명 : 어덕행덕</p></div>
+		<div class="col-3" ></div>
+		</div>
+		<hr>
+	</section>
+
+
+
+	<section class="j_top">
+	<div class="row">
+	<div class="col-3 " ></div>
+	<div class="col-3 " ><img src="shake.gif"></div>
+	
+<div class="col-3 bigtext" ><h2 class=" j_top text-stroke left">0순위<br><br>가장 먼저 <br>응원봉을 흔들어!<br><br>콘서트장 같은<br>분위기가 느끼져?</h2>
+		</div>
+		
+	</div></section>
+
+	<section class="j_top">
+	<div class="row">	
+	
+	<div class="col-3  " ><img  src="p_drink1.jpg"></div>
+	<div class="col-3" ><img src="p_drink2.jpg"> 
+		</div>
+<div class="col-3 bigtext" ><h2 class=" j_top text-stroke left">1<br><br> 그리고 음료수를<br> 꺼내 (아 시원해)
+			<br><br>목마를 때마다<br> 한 모금씩 꺾어!</h2>
+		</div>
+	</div></section>
+	
+	<section class="j_top">
+	<div class="row">
+	<div class="col-3 bigtext">
+		<h2 class=" j_top text-stroke left">2<br><br> 눈물이 날 땐<br> 포켓 티슈를...<br>
+		<h2 class=" j_top text-stroke left">멋진_덕후가<br>우는_법.txt</h2>
+	</div>
+	<div class="col-3 " ><img src="p_cry1.jpg"></div>
+	<div class="col-3" ><img src="p_cry2.jpg"> 
+		</div></div></section>
+
+	<section class="j_top">
+	<div class="row">
+	
+	<div class="col-70p " ><img src="p_c.jpg"></div>
+	
+<div class="col-3 bigtext" ><h2 class=" j_top text-stroke left">3<br><br>으악 귀여워!!!<br>쿠션 쥐어짜ㅜㅜ<br>(쿠션: 살려줘...)</h2>
+		</div>
+	</div></section>
+
+	<section class="j_top">
+	<div class="row">
+	
+	<div class="col-3 " ><img src="p_s.jpg"></div>
+	
+<div class="col-3 bigtext" ><h2 class=" j_top text-stroke left">4<br><br> 폰스탠드 덕분에 <br> 두 손은 아주<br> 편-안 하다구?</h2>
+		</div>
+		<div class="col-3 " ></div>
+	</div></section>
+
+
+<section  class="titleback section-margin" id="a8">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>살짝 설렜어 나!</h2>		
+		</div></div>
+	</section>
+<section>
+	<div class="row">
+		<div class=" col-1 ">
+			<h1 class="textcenter ">HAPPINESS POWER UP!</h1>
+		</div>
+	</div>
+
+<section>
+	<div class="row">
+		<div class="col-2" >
+			<iframe class="outline" width="560" height="315" src="https://www.youtube.com/embed/fugCSVqYr5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h2>별빛에게 바치는 스페셜 영상(응원법 ver.)</h2>
+		</div>
+		<div>
+			<iframe  class="outline" width="560" height="315" src="https://www.youtube.com/embed/REcKDqT4uhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h2>[IU] 'Blueming' 응원법</h2>
+		</div>
+	</div> <hr></section>
+
+<section class="section-margin">
+	<div class="row">
+		<div class="col-3 detailtitle text-stroke">살짝 설레는<br>이벤트 ❤</div>
+		<div class="col-4" ></div>
+		<div class="col-3 ">
+		<p>온콘키트와 함께하는 인증사진을<br> 해시태그 #온콘키트 #00000
+와 함께 본인의 SNS에 업로드하면<br> 추첨을 통해 특별한 선물을 쏜다!</p></div></div>
+		
+	</section>
+
+	<section class="j_top">
+	<div class="row">
+		<div class="col-2" >
+			<p>멋진 사진을 찰칵 찍고<br>인스타에 업로드!</p>
+			<img class=" outline j_top" src="insta.jpg">
+		</div>
+		<div class="col-6 ">
+			<img class="j_margin" src="event1.png">
+			<img src="event2.png">
+			<p class="j_top">특별한 포토카드 + <br>무료 A/S 권 증정!</p>
+		</div>
+
+		
+	</div>
+		
+	</section>
+
+<section  class="titleback section-margin" id="a4">
+	<div class="row">
+		<div class="col-1 bigtext" >
+		 <h2>오프라인 매장으로 놀러오세요!</h2>		
+		</div></div>
+	
+	</section>
+	
+	<section class="section-margin">
+	<div class="row">
+		<div class="col-4" ></div>
+		<div class="col-2 " id="map" style="width:500px;height:400px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0fddff7427e78e1e69fdddb7f0cf3358"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.579423, 126.889781),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+
+		
+	
+		<div class="col-4" >
+			
+		</div>
+	
+	</div>
+	</section>
+	<section><div class=" j_top col-1"><h2>서울시 마포구 상암동 누리꿈스퀘어로 <br>
+		놀러오시면 다양한 굿즈상품을 <br>만나볼 수 있답니다!</h2></div></section>
+
+
+<footer >
+	<section >
+		<hr>
+	<div class="row">
+		<div class="text-col-2 footer-bigtext text-stroke">상담문의<br>02-000-0000<<br> <br>
+	평일 09:00 - 18:00 <br> 일요일 및 공휴일 휴무</div>
+	</div>
+	</section>
+
+	<section >
+		<hr>
+	<div class="footer row">
+		<ul><li>
+            <div class="txt_detail"><b>교환/환불 안내 및 배송정보<b></div>
+        <ul class="footer-text">
+                <li>(주)더쿠샵 대표 : 박주연 </li>
+                <li>사업자등록번호 : 000-00-00000</li>
+                <li>통신판매업 신고 : 제 01-2345호</li>
+                <li>개인정보보호책임자 : 000</li>
+                <li>소비자피해보상보험 SGI 서울보증</li>
+                <li>서울시 마포구 상암동 누리꿈스퀘어</li>
+                <li>qkrwndus0924@naver.com</li>
+              </ul>
+             
+         
+          </li>
+      </ul>
+          <li>
+            <div class="txt_detail"><b><b></div>
+
+              <ul class="footer-text">
+               <li>교환/반품 신청은 배송완료 후 7일 이내 가능합니다.</li>
+               <li>변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.</li>
+               <li>상품 불량인 경우는 배송비를 포함한 전액이 환불됩니다.</li>
+               <li>출고 이후 환불요청 시 상품 회수 후 처리됩니다.</li>
+                <li>상품페이지에 교환/환불/AS에 대한 브랜드 개별기준이 <br>있는 경우에는 해당 내용이 우선 적용 됩니다.</li>
+                <li>해외배송 표시가 되어 있는 상품은 해외 주소로 배송이 가능합니다. (배송방법 : EMS)</li>
+                <li>배송기간은 주문일(무통장입금은 결제완료일)로부터 1일(24시간) ~ 5일정도 걸립니다.</li>
+              </ul>
+        
+          </li>
+        </ul>
+      </div>
+  </section>
+
+ 
+<section class="bg-blue footerlast">
+		<div><p >COPYRIGHT © JUYEON PARK ALL RIGHTS RESERVED.</p></div>
+</section>
+  </footer>
+
+
+
+</body>
+</html>
